@@ -1,7 +1,7 @@
 /* For mobile devices and all screens */
 
 header{
-    border: 1px solid white;
+    border: 1px solid transparent;
     display: flex;
     justify-content: space-between;
     padding: 3px;
@@ -25,7 +25,7 @@ header nav{
     }
 
 .mobile-nav span{
-    border: 1px solid white;
+    border: 1px solid transparent;
     padding: 3px;
     font-size: 30px;
 }
