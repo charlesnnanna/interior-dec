@@ -1,0 +1,27 @@
+/* For mobile screens */
+section{
+    display : flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+.interior-view{
+    padding: 0;
+    margin: 0;
+}
+
+.view{
+    border: 1px solid white;
+    width: 95vw;
+    height: 50vh;
+    
+    background-position: center;
+    background: url('/assets/images/photo-1.png');
+}
+
+/* For large screens */
+
+@media only screen and (min-width: 768px) {
+    
+}

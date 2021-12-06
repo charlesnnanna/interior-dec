@@ -1,0 +1,41 @@
+/* For mobile devices and all screens */
+
+header{
+    border: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    padding: 3px;
+}
+
+header nav{
+    display: none;
+}
+
+.logo{
+    border: 1px solid #FFFFFF;
+    padding: 5px;
+    font-size: 20px;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+}
+
+.mobile-nav{
+    display: block;
+    }
+
+.mobile-nav span{
+    border: 1px solid white;
+    padding: 3px;
+    font-size: 30px;
+}
+
+.inactive{
+    display: none;
+}
+
+/* For large screens */
+
+@media only screen and (min-width: 768px) {
+    
+}
