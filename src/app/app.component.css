@@ -1,0 +1,28 @@
+
+.app{
+    margin-top: 20px;
+    border: 1px solid transparent;
+    height: 900px;
+}
+
+.copyright{
+    margin-top: 270px;
+    text-align: center;
+}
+
+@media only screen and (min-width: 600px) {
+    .app{
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 50px;
+        height: 1000px;
+    }
+
+    .copyright{
+        margin-top: 300px;
+        
+    }
+
+
+}
+

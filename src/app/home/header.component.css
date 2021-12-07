@@ -4,7 +4,7 @@ header{
     border: 1px solid transparent;
     display: flex;
     justify-content: space-between;
-    padding: 3px;
+    
 }
 
 header nav{
@@ -12,22 +12,23 @@ header nav{
 }
 
 .logo{
-    border: 1px solid #FFFFFF;
-    padding: 5px;
+    border: 1px solid transparent;
     font-size: 20px;
     text-transform: uppercase;
     box-sizing: border-box;
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Crimson Pro', serif;
 }
 
-.mobile-nav{
-    display: block;
-    }
+.logo span{
+    
+    border: 1px solid white;
+    padding: 5px;
+}
+
 
 .mobile-nav span{
     border: 1px solid transparent;
-    padding: 3px;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .inactive{
@@ -36,6 +37,38 @@ header nav{
 
 /* For large screens */
 
-@media only screen and (min-width: 768px) {
-    
+@media only screen and (min-width: 600px) {
+
+    header{
+        margin-bottom: 100px;
+    }
+
+    header nav{
+        display: block;
+        border: 1px solid transparent;
+    }
+
+    .mobile-nav{
+        display: none;
+    }
+
+    nav ul{
+        list-style-type: none;
+        display: flex;
+        border: 1px solid transparent;
+        justify-content: space-around;
+        margin: 0;
+        flex-wrap: wrap;
+    }
+
+    nav ul li{
+        border: 1px solid transparent;
+        margin-left: 100px;
+        padding: 5px;
+    }
+
+    .active{
+        border-bottom: 1px solid white;
+        font-weight: bold;
+    }
 }

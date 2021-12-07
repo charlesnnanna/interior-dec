@@ -1,72 +1,123 @@
 /* For mobile screens */
+
 section{
-    display : flex;
+
+}
+
+.container{
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    width: inherit;
+    
 }
 
-.interior-desc h1{
-    font-family: 'Dosis', sans-serif;
-}
-.interior-view{
-    position:relative;
-    padding: 0;
-    margin: 0;
+.hero-description{
+    
 }
 
-.view{
-    position: absolute;
-    border: 1px solid transparent;
-    width: 95vw;
-    height: 300px;
-    background: url('/assets/images/photo-1.png');
+.hero-description h1{
+    font-size: 36px;
+}
+
+.hero-description p{
+    font-size: 14px;
+}
+
+.read-more{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.hero-image{
+    background: url("/assets/images/photo-1.png");
+    margin: auto;
+    min-width: 95vw;
+    height: 40vh;
+    
 }
 
 .author{
-    border: 1px solid #181719;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid transparent;
     background-color: #181719;
-    position: absolute;
-    display: flex;
-    flex-wrap: wrap;
-    width : 80vw;
-    top: 250px;
-    left: 50px;
-    font-family: 'Open Sans', sans-serif;
-}
-
-.author-bio{
-    display: flex;
-    border: 1px solid transparent;
-    padding: 7px;
-    flex-wrap: wrap;
-    width: inherit;
-}
-
-.author-bio img{
-    border: 1px solid #181719;
-    border-radius: 50%;
-    height: 70px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 250px;
+    max-width: 400px;
     margin-left: 20px;
-    margin-top: 10px;
+    padding: 20px;
+}
+
+.author-data{
+    display: flex;
 
 }
 
-.author-bio div{
+.author-data span{
+    margin-left: 20px;
+}
+
+.author-data span >:first-child{
+    font-size: 14px;
+}
+
+.author-data span >:last-child{
+    font-size: 12px;
+}
+
+.author-data img{
     border: 1px solid transparent;
-    margin-left: 15px;
+    border-radius: 50%;
+    width: 100px;
 }
 
-.caption{
-    border: 1px solid transparent;
-    width: inherit;
-    font-family: "chiller";
-    margin-left: 15px;
-
-
+.author p{
+    font-size: 18px;
+    font-family: 'Lora', serif;;
 }
-
 /* For large screens */
+@media only screen and (min-width: 600px) {
 
-@media only screen and (min-width: 768px) {
     
+    .container{
+       justify-content: space-between;
+    }
+    
+    .hero-description{
+        align-self: center; 
+    }
+
+    .hero-description h1{
+        font-size: 48px;
+    }
+
+    .hero-description p{
+        font-size: 24px;
+    }
+
+    .read-more{
+        font-size: 18px;
+    }
+
+    .hero-image{
+        border: 1px solid transparent;
+        background: url("/assets/images/photo-2.png");
+        min-width: 0;
+        width: 700px;
+        height: 527px;
+        margin: 0;
+        
+    }
+
+    .author{
+        margin-top: 450px;
+        max-width: 400px;
+        margin-left: 230px;
+    }
+
+    .author p{
+        font-size: 24px;
+    }
 }
