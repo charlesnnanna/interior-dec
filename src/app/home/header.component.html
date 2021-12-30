@@ -4,17 +4,35 @@
     </div>
 
     <div class="mobile-nav">
-        <span>&#9776;</span>
-        <span class="inactive">&#9932;</span>
+        <span class="toggle" (click) = 'toggleNav()'>&#9776;</span>
     </div>
 
-    <nav>
+    
+    <nav [@openClose] = 'showNav ? "open" : "closed" ' class="mobile-items" >
+        <div class="nav-header">
+            <span class="toggle" (click) = 'toggleNav()'>&#9932;</span>
+        </div>
+        <div class="nav-items"> 
+            <ul>
+                <li class = "active">Home</li>
+                <li>Collection</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </nav>
+    
+
+    <nav class="lg-items">
         <ul>
             <li class = "active">Home</li>
             <li>Collection</li>
             <li>About</li>
             <li>Contact</li>
         </ul>
-        
     </nav>
+
+   
+    
+
 </header>
