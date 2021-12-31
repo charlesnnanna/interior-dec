@@ -78,7 +78,7 @@ header{
     left: 0;
     height: inherit;
     width: inherit;
-    border: 1px solid white;
+    border: 1px solid transparent;
     display: flex;
     justify-content: center;
     align-items: center;
